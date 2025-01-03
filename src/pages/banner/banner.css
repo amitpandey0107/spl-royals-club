@@ -1,0 +1,43 @@
+:root {
+    --color-primary:#9c0204;
+    --secondary-color:#01161E;
+    --color-primary-dark:#c70a05;
+    --text-color:#000000;
+    --color-white:#FFFFFF;
+}
+
+.banner {
+    position: relative;
+
+    & .banner__slider{
+        height: 700px;
+        background-image: url('/img/banner__3.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        & .banner__content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+
+            & h1 {
+                font-size: 80px;
+                color: var(--color-white);
+                font-weight: 600;
+
+                & span {
+                    font-size: 120px;
+                    display: block;
+                    color: black;
+                    -webkit-text-fill-color: var(--color-primary-dark); 
+                    -webkit-text-stroke-width: 2px;
+                    -webkit-text-stroke-color: var(--color-white);
+                }
+            }
+        }
+    }
+}
